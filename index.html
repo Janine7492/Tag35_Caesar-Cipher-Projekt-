@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ver- & Entschlüsseln mit Caesar</h1>
+    <fieldset>
+        <legend>Codieren</legend>
+        <label for="inputClearText">Texteingabe</label>
+        <input type="text" id="inputClearText" name="inputClearText"
+            placeholder="Gib hier Klartext zum Verschlüsseln ein">
+        <label for="inputNumber1">Schlüssel (Zahl)</label>
+        <input type="number" id="inputNumber1" name="inputNumber1"
+            placeholder="Gib hier eine Zahl zwischen 1 und 25 ein">
+        <button type="button" onclick="encode()">Verschlüsseln</button>
+        <p>Verschlüsselter Text: </p>
+        <p id="outputCodedText"></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Decodieren</legend>
+        <label for="inputCodedText">Texteingabe</label>
+        <input type="text" id="inputCodedText" name="inputCodedText"
+            placeholder="Gib hier verschlüsselten Text zum decodieren ein">
+        <label for="inputNumber2">Schlüssel (Zahl)</label>
+        <input type="number" id="inputNumber2" name="inputNumber2"
+            placeholder="Gib hier eine Zahl zwischen 1 und 25 ein">
+        <button type="button" onclick="decode()">Entschlüsseln</button>
+        <p>Entschlüsselter Text: </p>
+        <p id="outputDecodedText"></p>
+    </fieldset>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
